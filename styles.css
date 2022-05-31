@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&family=Playfair+Display:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+.menuContainer{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+.logo{
+    width: 5vw;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    color: #9767A9;
+    font-size: 0.7vw;
+    font-weight: 400;
+    width: 40vw
+}
+
+li{
+    width: 5vw;
+}
+
+.list{
+    width: 8vw;
+
+}
+
+li:hover{
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    width: 16.5vw;
+}
+
+input{
+    border: #9767A9 solid 2px;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+    width: 9vw;
+    border-radius: 25px;
+    background-image: url(./assets/search.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 0.2vw;
+    background-size: 1vw;
+    font-size: 0.7vw;
+}
+
+input::placeholder{
+    position: relative;
+    left: 1.5vw;
+}
+
+.social{
+    width: 6vw;
+}
+
+@media screen and (max-width:1024px){
+    .logo{
+        width: 7vw;
+    }
+
+    ul{
+        font-size: 1vw;
+    }
+}
