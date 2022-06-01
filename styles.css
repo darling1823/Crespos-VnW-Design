@@ -87,5 +87,77 @@ input::placeholder{
 
     ul{
         font-size: 1vw;
+        width: 50vw;
+    }
+
+    li{
+        width: 10vw;
+    }
+
+    .list{
+        width: 20vw;
+    }
+
+    .search{
+        width: 23vw;
+    }
+
+    input{
+        padding-top: 0.4vw;
+        padding-bottom: 0.4vw;
+        width: 12vw;
+        font-size: 0.9vw;
+        background-size: 1.2vw;
+    }
+
+    input::placeholder{
+        left: 1.6vw;
+    }
+
+    .social{
+        width: 7vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    header{
+        justify-content: center;
+        position: relative;
+        padding-top: 0.7vw
+    }
+
+    .menuContainer{
+        display: initial;
+    }
+
+    .menu{
+        display: initial;
+        position: absolute;
+        width: 7vw;
+        right: 93%;
+        top: 0px;
+    }
+
+    .logo{
+        width: 8vw;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px){
+    .menu{
+        width: 10vw;
+        right: 90%;
+    }
+
+    .logo{
+        width: 12vw;
     }
 }
