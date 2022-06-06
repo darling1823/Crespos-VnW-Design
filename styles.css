@@ -104,8 +104,32 @@ h1{
     font-weight: 300;
 }
 
-.intro h1, p{
+.intro h1, .intro p{
     margin-top: 9vw;
+}
+
+.contentHead{
+    background-color: #9767A9;
+    color: #FFF;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.contentHead h2{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 4vw;
+    width: 58vw;
+    position: relative;
+    left: 2vw;
+}
+
+.contentHead p{
+    margin-top: 2.5vw;
+    margin-bottom: 3vw;
+    font-size: 1.2vw;
+    width: 32vw;
+    font-weight: 300;
 }
 
 @media screen and (max-width:1024px){
@@ -204,6 +228,17 @@ h1{
         font-size: 2.5vw;
         width: 30vw;
     }
+
+    .contentHead{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentHead p{
+        font-size: 2.5vw;
+        width: 60vw;
+        text-align: justify;
+    }
 }
 
 @media screen and (max-width:425px){
@@ -236,6 +271,13 @@ h1{
         width: 60vw;
         margin-top: 8vw;
     }
+
+    .contentHead h2{
+        font-size: 6vw;
+        width: 85vw;
+    }
+
+    /* O próximo passo é aumentar o p */
 }
 
 @media screen and (max-width: 375px){
@@ -263,5 +305,10 @@ h1{
         width: 55vw;
     }
 
-    /* É necessário ainda aumentar o tamanho do p nessa resolução */
+    .intro p{
+        font-size: 6vw;
+        width: 65vw;
+        margin-top: 10vw;
+    }
+
 }
